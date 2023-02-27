@@ -1,0 +1,1 @@
+[Mon Feb 27 00:16:23.674835 2023] [php:error] [pid 81605] [client 192.168.2.59:59507] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /srv/users/gdbxczen/kbfcyag-m1/routes/web.php on line 23, referer: http://kbfcyag-m1.wsr.ru/public/catalog
