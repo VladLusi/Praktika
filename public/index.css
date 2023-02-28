@@ -72,9 +72,6 @@ input[name="r"] {
     transition: all 0.6s ease;
     display: flex;
  }
-
-
-
 #r1:checked ~ .s1 {
    margin-left: 0;
 }
@@ -90,29 +87,14 @@ input[name="r"] {
 #r4:checked ~ .s1 {
    margin-left: -75%;
 }
-.imgio{
-    height: 200px;
-    width: 200px;
-   padding: 15px;
-   margin-right: 10px;
-   margin-bottom: 10px;
-   border: 2px solid;
+.photo{
+   width: 200px;
+   height: 210px;
+   visibility: hidden;
+}
+.active{
+ visibility: visible;
 }
 
-.imgi{
-    height: 200px;
-    width: 200px;
-   padding: 15px;
-   margin-right: 10px;
-   margin-bottom: 10px;
-   border: 2px solid;
-
-
-}
-.imgi.active
-{
-    display: block;
-
-}
 
 

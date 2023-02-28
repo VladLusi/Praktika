@@ -1,36 +1,31 @@
 @extends('layouts.app')
 @section('content')
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
 
-@foreach($yi as $p)
-
-{{-- <div class="slider middle">
-   <div class="slides">
-      <input type="radio" name="r" id="r1" checked>
-      <input type="radio" name="r" id="r2">
-      <input type="radio" name="r" id="r3">
-      <input type="radio" name="r" id="r4">
-      <div class="slides1"> --}}
-
-         <img  src="{{$loop->Img}} / {{$loop->count}}" alt="Изображение"  class="imgi active"/>
-
-         {{-- </div> --}}
-      {{-- <div class="slides2"> --}}
-      {{-- </div> --}}
-      {{-- <div class="slides3"> --}}
-      {{-- </div> --}}
-      {{-- <div class="slides4"> --}}
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+@foreach($yi as $p)       
+@if ($loop->first)
+<img class="photo d-block w-100 active" src="{{$p->Img}}" alt="Первый слайд">
+      @else    
+<img class="photo d-block w-100" src="{{$p->Img}}" alt="Первый слайд">
+@endif   
+   
 
 
-
-      {{-- </div> --}}
-   {{-- </div>
-   <div class="navigation">
-      <label for="r1" class="bar"></label>
-      <label for="r2" class="bar"></label>
-      <label for="r3" class="bar"></label>
-      <label for="r4" class="bar"></label>
-   </div>
-</div> --}}
 @endforeach
-
+</div>
 @endsection
