@@ -13,7 +13,7 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
     <link href="/public/index.css" rel="stylesheet">
-    <script src="/public/index.js"></script>
+
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
@@ -88,5 +88,6 @@
             @yield('content')
         </main>
     </div>
+    <script src="/public/index.js"></script>
 </body>
 </html>

@@ -1,31 +1,23 @@
 @extends('layouts.app')
 @section('content')
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+  <div class="swiper-button-next">
+    <img src="/public/img/pngtree-vector-forward-icon-png-image_931210.jpg" id="phito"/>
+    <img src="/public/img/61022.png" id="phooto"/>
 
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-@foreach($yi as $p)       
+<input type="hidden" id="ff" value="0"></span>
+@foreach($yi as $p)
 @if ($loop->first)
-<img class="photo d-block w-100 active" src="{{$p->Img}}" alt="Первый слайд">
-      @else    
-<img class="photo d-block w-100" src="{{$p->Img}}" alt="Первый слайд">
-@endif   
-   
+<img class="photo  active" src="{{$p->Img}}" alt="Первый слайд">
+      @else
+<img class="photo w-100" src="{{$p->Img}}" alt="Первый слайд">
+@endif
+
 
 
 @endforeach
+</div>
+    </div>
 </div>
 @endsection
