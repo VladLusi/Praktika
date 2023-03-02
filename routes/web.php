@@ -27,4 +27,6 @@ Route::get('/onas', function(){
 Route::get('/catalog',[App\Http\Controllers\Productss::class,'show'])->name('home');
 Route::get('/onas',[App\Http\Controllers\Productss::class,'Onas'])->name('home');
 Route::get('/Tovars',[App\Http\Controllers\Productss::class,'Tovars'])->name('home');
+Route::get('/GdeNas',[App\Http\Controllers\Productss::class,'Gden'])->name('home');
+
 
