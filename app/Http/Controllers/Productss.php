@@ -13,7 +13,7 @@ class Productss extends Controller
         return view('Products', ['ez'=>$t]);
     }
     public function Onas(){
-        $u=\App\Models\Visp::orderBy("id", "desc")->limit(5)->get();
+        $u=\App\Models\Visp::all();
         return view('onas', ['yi'=>$u]);
     }
     public function Tovars(){

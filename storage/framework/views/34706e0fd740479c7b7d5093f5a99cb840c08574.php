@@ -3,7 +3,7 @@
 <div class="map">
     <div class="center">
     <img class="mapp" src="<?php echo e($m->Img); ?>"/>
-</div>
+    </div>
     <p id="tr">
         <?php echo e($m->Adres); ?>
 

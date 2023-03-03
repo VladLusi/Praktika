@@ -21,7 +21,6 @@
         @endforeach
 
     </div>
-
     <p class="text">
         Наши новинки!
     </p>

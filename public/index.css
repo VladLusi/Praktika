@@ -15,6 +15,11 @@
 		width: 25%;
 	}
 }
+@keyframes example{
+    from {background-color: rgba(rgb(204, 164, 164), green, rgb(107, 107, 224), alpha, 0.6);}
+    to {background-color: black;}
+}
+
 *{
     margin:0;
     padding:0;
@@ -92,8 +97,6 @@ input[name="r"] {
 .photo{
    width: 230px;
    height: 210px;
-   margin-top: 40px;
-   margin-left: 60px;
 
 
 }
@@ -111,7 +114,7 @@ i {
 .swiper .mySwiper
 {
     display: flex;
-    background-color: rgb(192, 184, 173);
+    background-color: rgba(192, 184, 173, 0.6);
     text-align: center;
 }
 .swiper
@@ -121,7 +124,7 @@ i {
 }
 .right {
     transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
+
 }
 .prev img,
 .next img
@@ -131,17 +134,17 @@ i {
 }
 .left {
     transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
+
 }
 
 .up {
     transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg);
+
 }
 
 .down {
     transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
+
 }
 #phooto{
     width: 190px;
@@ -185,12 +188,16 @@ i {
 }
 .product-wrapper {
 	display: block;
-	width: 100%;
+	width: 30%;
 	float: left;
 	transition: width .2s;
-    margin-left: 50px;
+    animation-name: example;
+    animation-duration: 10s;
+    background-color: #888;
+
 }
 .product {
+    padding: 30px;
 	display: block;
 	border: 1px solid #071b02;
 	border-radius: 3px;
@@ -201,6 +208,7 @@ i {
 	color: #d6d0d0;
 	z-index: 0;
 	height: 300px;
+    width: 30%;
 }
 .product-photo {
 	position: relative;
@@ -215,7 +223,6 @@ i {
 	margin: 0;
 	font-size: 1em;
 	line-height: 1.4em;
-	height: 5.6em;
 	overflow: hidden;
 }
 .product p:after {

@@ -1,30 +1,42 @@
 @extends('layouts.app')
 @section('content')
-@foreach($ez as $r)
+
 <div class="container">
-    <section class="products clearfix">
-        <div class="product-wrapper">
-            <a href="" class="product">
-               <img class="photo" src="{{$r->Img}}"/>
-                <br>
-            </a>
+    <section class="products clearfix d-flex flex-wrap">
+        @foreach($ez as $r)
+        <div class="product-wrapper product col-lg-6 d-flex align-items-center">
+            {{-- <a href="" class="product d-flex align-items-center"> --}}
+               <div class="d-flex flex-column">
+                    <img class="photo pe-3" src="{{$r->Img}}"/>
+                    {{$r->Price}}
+               </div>
+
+               <div class="containerr">
+                    <div class="d-flex gap-4 align-items-center">
+                        <h3>{{$r->Name}}</h3>
+                        <p>{{$r->Data}}</p>
+                    </div>
+                    <big>Описание</big>
+                    <p id="Opisanie">
+                        PlayStation 5 получила 16 ГБ оперативной памяти нового стандарта GDDR6 с пропускной способностью 448 ГБ в секунду.
+                    PlayStation 5 имеет оптический привод Ultra HD Blu-ray и использует диски
+                    Blu-ray объёмом до 100 ГБ.
+                    </p>
+                    {{-- {{$r->Name}}
+                    {{$r->Price}}
+                    {{$r->Data}} --}}
+                </div>
+            {{-- </a> --}}
+
+          </div>
+          @endforeach
         </div>
+
+      </div>
 
     </section>
 
 </div>
-@endforeach
-<div class="container">
-    <section class="products clearfix">
-        <div class="product-wrapper">
-            <a href="" class="product">
-               <img class="photo" src="{{$r->Img}}"/>
-                <br>
-                {{$r->Name}}
-                {{$r->Price}}
-                {{$r->Data}}
-            </a>
-        </div>
 
-    </section>
+
 @endsection
