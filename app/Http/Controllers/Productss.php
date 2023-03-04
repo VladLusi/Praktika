@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Gde;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class Productss extends Controller
 {
@@ -24,5 +25,21 @@ class Productss extends Controller
         $i=Gde::all();
         return view('Gde', ['Nas'=>$i]);
 }
+ public function detal($id){
+    $o=\App\Models\Tovars::where('id',$id)->get();
+    return view('detal', ['detall'=>$o]);
 
+ }
+ public function Baskets(){
+     $n=\App\Models\Basskets::all();
+     return view('buttons', ['basketss'=>$n]);
+ }
+ public function Basketsy($id){
+    $n=\App\Models\Basskets::create([
+        'id_user'=>\Illuminate\Support\Facades\Auth::user()->id,
+        "id_product"=> $id,
+        "count"=> 1,
+    ]);
+    return view('buttons', ['basketss'=>$n]);
+}
 }

@@ -35,6 +35,8 @@ y.addEventListener('click',function(){
         document.getElementById("ff").value= pp;
 
 });
+//Корзина
+
 
 
 

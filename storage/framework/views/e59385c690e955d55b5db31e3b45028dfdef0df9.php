@@ -9,19 +9,25 @@
                     <img class="photo pe-3" src="<?php echo e($r->Img); ?>"/>
                     <?php echo e($r->Price); ?>
 
+                    
+                   <button class="button"><a href="<?php echo e(url("/add")); ?>/<?php echo e($r->id); ?>"><p id="buttons">Добавить в корзину</p></a></button>
                </div>
 
                <div class="containerr">
                     <div class="d-flex gap-4 align-items-center">
                         <h3><?php echo e($r->Name); ?></h3>
-                        <p><?php echo e($r->Data); ?></p>
+                        <p><?php echo e($r->characteristic); ?></p>
                     </div>
                     <big>Описание</big>
+                   
+                        <a class="nav-link" href="<?php echo e(url("/detal")); ?>/<?php echo e($r->id); ?>">Детальное Описание</a>
+                    
                     <p id="Opisanie">
                         PlayStation 5 получила 16 ГБ оперативной памяти нового стандарта GDDR6 с пропускной способностью 448 ГБ в секунду.
                     PlayStation 5 имеет оптический привод Ultra HD Blu-ray и использует диски
                     Blu-ray объёмом до 100 ГБ.
                     </p>
+
                     
                 </div>
             

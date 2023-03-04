@@ -7,8 +7,10 @@
     <p id="tr">
         <?php echo e($m->Adres); ?>
 
+        <br>
         <?php echo e($m->email); ?>
 
+        <br>
         <?php echo e($m->Phone); ?>
 
     </p>

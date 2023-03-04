@@ -34,6 +34,7 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
+                        
                         <?php if(auth()->guard()->guest()): ?>
                             <?php if(Route::has('login')): ?>
                                 <li class="nav-item">
@@ -47,12 +48,9 @@
                                 <a class="nav-link" href="<?php echo e(url("/catalog")); ?>">Каталог</a>
                             </li>
                             <li class ="nav-item">
-                                <a class="nav-link" href="<?php echo e(url("/Tovars")); ?>">Наши товары</a>
-                            </li>
-                            <li class ="nav-item">
                                 <a class="nav-link" href="<?php echo e(url("/GdeNas")); ?>">Где нас найти?</a>
                             </li>
-
+                             
 
                             <?php if(Route::has('register')): ?>
                                 <li class="nav-item">
@@ -65,7 +63,7 @@
                                     <?php echo e(Auth::user()->name); ?>
 
                                 </a>
-
+                               
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="<?php echo e(route('logout')); ?>"
                                        onclick="event.preventDefault();
@@ -80,6 +78,12 @@
                                 </div>
                             </li>
                         <?php endif; ?>
+                        <a href="<?php echo e(url("/baskets")); ?>">
+                            <img class ="bass" src="\public\img\3081797.png" >
+                        </a>
+                        <div class="g">
+                        <a href="#">1</p>
+                        </div>
                     </ul>
                 </div>
             </div>

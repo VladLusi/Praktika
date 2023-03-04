@@ -201,10 +201,10 @@ unset($__errorArgs, $__bag); ?>
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label for="Rules" class="col-md-4 col-form-label text-md-end"><?php echo e(__('Rules')); ?></label>
+                            <label for="Rules" class="col-md-4 col-form-label text-md-end"><?php echo e(__('Я согласен с правилами сайта')); ?></label>
 
                             <div class="col-md-6">
-                                <input id="Rules" type="Rules" class="form-control <?php $__errorArgs = ['Rules'];
+                                <input id="Rules" type="checkbox" <?php $__errorArgs = ['checkbox'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
 if (isset($message)) { $__messageOriginal = $message; }
@@ -227,13 +227,6 @@ endif;
 unset($__errorArgs, $__bag); ?>
                             </div>
                         </div>
-
-
-
-
-
-
-                        
                     </div>
                     </div>
                         <div class="row mb-0">

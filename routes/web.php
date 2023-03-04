@@ -28,5 +28,10 @@ Route::get('/catalog',[App\Http\Controllers\Productss::class,'show'])->name('hom
 Route::get('/onas',[App\Http\Controllers\Productss::class,'Onas'])->name('home');
 Route::get('/Tovars',[App\Http\Controllers\Productss::class,'Tovars'])->name('home');
 Route::get('/GdeNas',[App\Http\Controllers\Productss::class,'Gden'])->name('home');
+Route::get('/detal/{id}',[App\Http\Controllers\Productss::class,'detal'])->name('home');
+Route::get('/baskets',[App\Http\Controllers\Productss::class,'Baskets']);
+Route::get('/add/{id}',[App\Http\Controllers\Productss::class,'Basketsy']);
+
+
 
 

@@ -34,6 +34,7 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
+                        
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
@@ -47,12 +48,9 @@
                                 <a class="nav-link" href="{{url("/catalog")}}">Каталог</a>
                             </li>
                             <li class ="nav-item">
-                                <a class="nav-link" href="{{url("/Tovars")}}">Наши товары</a>
-                            </li>
-                            <li class ="nav-item">
                                 <a class="nav-link" href="{{url("/GdeNas")}}">Где нас найти?</a>
                             </li>
-
+                             
 
                             @if (Route::has('register'))
                                 <li class="nav-item">
@@ -64,7 +62,7 @@
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
                                 </a>
-
+                               
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
@@ -78,6 +76,12 @@
                                 </div>
                             </li>
                         @endguest
+                        <a href="{{url("/baskets")}}">
+                            <img class ="bass" src="\public\img\3081797.png" >
+                        </a>
+                        <div class="g">
+                        <a href="#">1</p>
+                        </div>
                     </ul>
                 </div>
             </div>

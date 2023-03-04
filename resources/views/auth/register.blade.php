@@ -105,10 +105,10 @@
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label for="Rules" class="col-md-4 col-form-label text-md-end">{{ __('Rules') }}</label>
+                            <label for="Rules" class="col-md-4 col-form-label text-md-end">{{ __('Я согласен с правилами сайта') }}</label>
 
                             <div class="col-md-6">
-                                <input id="Rules" type="Rules" class="form-control @error('Rules') is-invalid @enderror" name="Rules" required autocomplete="Rules">
+                                <input id="Rules" type="checkbox" @error('checkbox') is-invalid @enderror" name="Rules" required autocomplete="Rules">
 
                                 @error('Rules')
                                     <span class="invalid-feedback" role="alert">
@@ -117,30 +117,6 @@
                                 @enderror
                             </div>
                         </div>
-
-
-
-
-
-
-                        {{-- <div class="col-md-6">
-                            <input id="password_repeat" type="text" class="form-control @error('password_repeat') is-invalid @enderror" name="password_repeat" value="{{ old('password_repeat') }}" required autocomplete="password_repeat" autofocus>
-
-                            @error('password_repeat')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
-                        </div>
-                        <div class="col-md-6">
-                            <input id="Rules" type="text" class="form-control @error('Rules') is-invalid @enderror" name="Rules" value="{{ old('Rules') }}" required autocomplete="Rules" autofocus>
-
-                            @error('Rules')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
-                        </div> --}}
                     </div>
                     </div>
                         <div class="row mb-0">

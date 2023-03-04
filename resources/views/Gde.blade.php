@@ -7,7 +7,9 @@
     </div>
     <p id="tr">
         {{$m->Adres}}
+        <br>
         {{$m->email}}
+        <br>
         {{$m->Phone}}
     </p>
 </div>
