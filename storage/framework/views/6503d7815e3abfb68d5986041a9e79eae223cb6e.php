@@ -74,7 +74,7 @@ if (isset($message)) { $__messageOriginal = $message; }
 $message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
-unset($__errorArgs, $__bag); ?>" name="Patronymic" value="<?php echo e(old('Patronymic')); ?>" required autocomplete="surname" autofocus>
+unset($__errorArgs, $__bag); ?>" name="Patronymic" value="<?php echo e(old('Patronymic')); ?>" required autocomplete="Patronymic" autofocus>
 
                                 <?php $__errorArgs = ['Patronymic'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
@@ -177,16 +177,15 @@ unset($__errorArgs, $__bag); ?>
                             <label for="password_repeat" class="col-md-4 col-form-label text-md-end"><?php echo e(__('Password_repeat')); ?></label>
 
                             <div class="col-md-6">
-                                <input id="password_repeat" type="password_repeat" class="form-control <?php $__errorArgs = ['password_repeat'];
+                                <input id="password_repeat" type="password" class="form-control <?php $__errorArgs = ['password_repeat'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
 if (isset($message)) { $__messageOriginal = $message; }
 $message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
-unset($__errorArgs, $__bag); ?>" name="password_repeat" required autocomplete="new-password">
-
-                                <?php $__errorArgs = ['password'];
+unset($__errorArgs, $__bag); ?>" name="password_confirmation" required autocomplete="new-password">
+                                <?php $__errorArgs = ['password_repeat'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
 if (isset($message)) { $__messageOriginal = $message; }

@@ -19,7 +19,6 @@
 
         </p>
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-
     </div>
     <p class="text">
         Наши новинки!

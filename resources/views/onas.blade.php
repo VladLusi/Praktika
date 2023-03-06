@@ -19,7 +19,6 @@
         {{$p->Name}}
         </p>
         @endforeach
-
     </div>
     <p class="text">
         Наши новинки!

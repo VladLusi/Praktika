@@ -18,7 +18,7 @@
       </div>
 
       <div class="description">
-        <span>Common Projects</span>
+        <span>Nintendo</span>
         <span>Bball High</span>
         <span>White</span>
       </div>

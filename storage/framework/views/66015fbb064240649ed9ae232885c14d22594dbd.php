@@ -22,7 +22,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="<?php echo e(url('/catalog')); ?>">Главная</a>
+                <a class="navbar-brand" href="<?php echo e(url('/catalog')); ?>"><img class="hito" src="\public\img\tgmeta.png"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="<?php echo e(__('Toggle navigation')); ?>">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -34,13 +34,6 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
-                        
-                        <?php if(auth()->guard()->guest()): ?>
-                            <?php if(Route::has('login')): ?>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo e(route('login')); ?>"><?php echo e(__('Авторизация')); ?></a>
-                                </li>
-                            <?php endif; ?>
                             <li class ="nav-item">
                                 <a class="nav-link" href="<?php echo e(url("/onas")); ?>">О нас</a>
                             </li>
@@ -49,13 +42,25 @@
                             </li>
                             <li class ="nav-item">
                                 <a class="nav-link" href="<?php echo e(url("/GdeNas")); ?>">Где нас найти?</a>
-                            </li>
-                             
 
+                            </li>
+                        
+                        <?php if(auth()->guard()->guest()): ?>
+                            <?php if(Route::has('login')): ?>
+    
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo e(route('login')); ?>"><?php echo e(__('Авторизация')); ?></a>
+                                </li>
+                                <li class ="nav-item">
+                            <?php endif; ?>
+                            
+                            
                             <?php if(Route::has('register')): ?>
+                          
                                 <li class="nav-item">
                                     <a class="nav-link" href="<?php echo e(route('register')); ?>"><?php echo e(__('Регистрация')); ?></a>
                                 </li>
+                                
                             <?php endif; ?>
                         <?php else: ?>
                             <li class="nav-item dropdown">
@@ -68,7 +73,7 @@
                                     <a class="dropdown-item" href="<?php echo e(route('logout')); ?>"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        <?php echo e(__('Logout')); ?>
+                                        <?php echo e(__('Выход')); ?>
 
                                     </a>
 

@@ -1,6 +1,6 @@
 @media only screen and (min-width: 450px) {
 	.product-wrapper {
-		width: 50%;
+		width: 80%;
 	}
 }
 
@@ -33,7 +33,7 @@
     padding:0;
 }
 body{
-    background-color: rgb(255, 153, 29);
+    background-color: rgb(230, 211, 188);
 }
 .slider {
    width: 800px;
@@ -267,6 +267,8 @@ i {
 	transition: transform .2s ease-out;
 	z-index: -1;
 	backface-visibility: hidden;
+  display: flex;
+  flex-wrap: nowrap;
 }
 .product-button-wrap:before {
 	content: "";
@@ -445,5 +447,9 @@ i {
     height:40px;
     width:40px;
     margin-top:20px;
+  }
+  .hito{
+    height: 100px;
+    width: 150px;
   }
  

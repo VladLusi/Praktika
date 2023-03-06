@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <div class="container">
+@csrf
     <section class="products clearfix d-flex flex-wrap">
         @foreach($tov as $m)
         <div class="product-wrapper product col-lg-6 d-flex align-items-center">

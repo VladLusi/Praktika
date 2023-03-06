@@ -41,7 +41,7 @@
                             <label for="Patronymic" class="col-md-4 col-form-label text-md-end">{{ __('Patronymic') }}</label>
 
                             <div class="col-md-6">
-                                <input id="surname" type="text" class="form-control @error('Patronymic') is-invalid @enderror" name="Patronymic" value="{{ old('Patronymic') }}" required autocomplete="surname" autofocus>
+                                <input id="surname" type="text" class="form-control @error('Patronymic') is-invalid @enderror" name="Patronymic" value="{{ old('Patronymic') }}" required autocomplete="Patronymic" autofocus>
 
                                 @error('Patronymic')
                                 <span class="invalid-feedback" role="alert">
@@ -95,9 +95,8 @@
                             <label for="password_repeat" class="col-md-4 col-form-label text-md-end">{{ __('Password_repeat') }}</label>
 
                             <div class="col-md-6">
-                                <input id="password_repeat" type="password_repeat" class="form-control @error('password_repeat') is-invalid @enderror" name="password_repeat" required autocomplete="new-password">
-
-                                @error('password')
+                                <input id="password_repeat" type="password" class="form-control @error('password_repeat') is-invalid @enderror" name="password_confirmation" required autocomplete="new-password">
+                                @error('password_repeat')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>

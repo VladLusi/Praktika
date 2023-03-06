@@ -18,10 +18,13 @@ use Illuminate\Support\Facades\Route;
 //});
 
 Auth::routes();
-Route::get('/onas', function(){
- return view('onas');
+Route::get('/', function(){
+ return redirect('/catalog');
 });
-
+Route::get('/home', function(){
+  return redirect('/catalog');
+ });
+ 
 
 //Route::get('/catalog',[App\Http\Controllers\Productss::class,'show'])->name('home');
 Route::get('/catalog',[App\Http\Controllers\Productss::class,'show'])->name('home');
@@ -31,6 +34,11 @@ Route::get('/GdeNas',[App\Http\Controllers\Productss::class,'Gden'])->name('home
 Route::get('/detal/{id}',[App\Http\Controllers\Productss::class,'detal'])->name('home');
 Route::get('/baskets',[App\Http\Controllers\Productss::class,'Baskets']);
 Route::get('/add/{id}',[App\Http\Controllers\Productss::class,'Basketsy']);
+Route::get('/token', function (Request $request) {
+  $token = $request->session()->token();
+
+  $token = csrf_token();
+});
 
 
 
