@@ -1,18 +1,30 @@
-@media only screen and (min-width: 450px) {
+@media only screen and (min-width: 300px) {
 	.product-wrapper {
-		width: 80%;
+		width: 30%;
+   display: flex;
+   flex-wrap: nowrap;
 	}
 }
+@media (max-width: 800px) {
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
 
 @media only screen and (min-width: 768px) {
 	.product-wrapper {
 		width: 33.333%;
+    
+
 	}
 }
 
 @media only screen and (min-width: 1000px) {
 	.product-wrapper {
 		width: 25%;
+    
+
 	}
 }
 @keyframes example{
@@ -47,6 +59,8 @@ body{
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
+   display: flex;
+   flex-wrap: nowrap;
 }
 
 .navigation {
@@ -55,6 +69,7 @@ body{
    left: 50%;
    transform: translateX(-50%);
    display: flex;
+   flex-wrap: nowrap;
 }
 
 .bar {
@@ -66,16 +81,22 @@ body{
    opacity: .5;
    border-radius: 10px;
    transition: all 0.4s ease;
+   display: flex;
+   flex-wrap: nowrap;
 }
 
 .bar:hover {
    opacity: 1;
    transform:scale(1.1);
+   display: flex;
+   flex-wrap: nowrap;
 }
 
 input[name="r"] {
    position: absolute;
    visibility: hidden;
+   display: flex;
+   flex-wrap: nowrap;
 }
 .swiper{
     width: 1000px;
@@ -105,6 +126,8 @@ input[name="r"] {
 .photo{
    width: 230px;
    height: 210px;
+   display: flex;
+   flex-wrap: nowrap;
 
 
 }
@@ -124,6 +147,8 @@ i {
     display: flex;
     background-color: rgba(192, 184, 173, 0.6);
     text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
 }
 .swiper
 {
@@ -139,6 +164,8 @@ i {
 {
     width: 100px !important;
     height: 100px !important;
+    display: flex;
+    flex-wrap: nowrap;
 }
 .left {
     transform: rotate(135deg);
@@ -159,17 +186,23 @@ i {
     height: 140px;
     padding-right: 60px;
     border-top: 50px;
+    display: flex;
+    flex-wrap: nowrap;
 }
 #phito{
     width: 150px;
     height: 140px;
     margin-left: 50px;
+    display: flex;
+    flex-wrap: nowrap;
 }
 .tetx{
     display: flex;
     flex-direction: row;
     gap: 20px;
     justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
 }
 .text{
   margin-left: 150px;
@@ -182,7 +215,9 @@ i {
     display: flex;
     flex-wrap: nowrap;
     margin-left:100px;
-    transition: 1s
+    transition: 1s;
+    display: flex;
+    flex-wrap: nowrap;
 
 }
 .mapp:hover{
@@ -452,4 +487,78 @@ i {
     height: 100px;
     width: 150px;
   }
- 
+ .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}

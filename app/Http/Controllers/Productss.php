@@ -42,4 +42,8 @@ class Productss extends Controller
     ]);
     return view('buttons', ['basketss'=>$n]);
 }
+ public function Oformlenie(){
+    $of=\App\Models\Oformlenie::all();
+    return view('Oformlenie', ['ofo'=>$of]);
+ }
 }

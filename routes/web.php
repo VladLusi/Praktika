@@ -34,11 +34,14 @@ Route::get('/GdeNas',[App\Http\Controllers\Productss::class,'Gden'])->name('home
 Route::get('/detal/{id}',[App\Http\Controllers\Productss::class,'detal'])->name('home');
 Route::get('/baskets',[App\Http\Controllers\Productss::class,'Baskets']);
 Route::get('/add/{id}',[App\Http\Controllers\Productss::class,'Basketsy']);
+Route::get('/oformlenie',[App\Http\Controllers\Productss::class,'Oformlenie']);
+
 Route::get('/token', function (Request $request) {
   $token = $request->session()->token();
 
   $token = csrf_token();
 });
+
 
 
 

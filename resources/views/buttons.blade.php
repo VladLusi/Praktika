@@ -5,6 +5,7 @@
     <div class="title">
       Пора закупиться!
     </div>
+    <a href="{{url("/oformlenie")}}">Перейти к оформлению заказа</a>
 
     <!-- Товар #1 -->
     <div class="item">
