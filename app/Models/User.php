@@ -22,6 +22,10 @@ class User extends Authenticatable
         'email',
         'password',
     ];
+    public function isAdmin()
+{
+return $this->is_admin; // поле is_admin в таблице users
+}
 
     /**
      * The attributes that should be hidden for serialization.

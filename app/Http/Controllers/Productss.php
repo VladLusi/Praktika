@@ -35,10 +35,11 @@ class Productss extends Controller
      return view('buttons', ['basketss'=>$n]);
  }
  public function Basketsy($id){
+    $id = Auth::id();
     $n=\App\Models\Basskets::create([
-        'id_user'=>\Illuminate\Support\Facades\Auth::user()->id,
+        'id_user'=>$id,
         "id_product"=> $id,
-        "count"=> 1,
+        "count"=> 2,
     ]);
     return view('buttons', ['basketss'=>$n]);
 }
@@ -46,4 +47,5 @@ class Productss extends Controller
     $of=\App\Models\Oformlenie::all();
     return view('Oformlenie', ['ofo'=>$of]);
  }
+
 }
