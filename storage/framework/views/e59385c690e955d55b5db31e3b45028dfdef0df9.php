@@ -1,20 +1,20 @@
 <?php $__env->startSection('content'); ?>
 
 <div class="container">
-    <section class="products clearfix d-flex flex-wrap">
+    <section class="products clearfix justify-content-center d-flex flex-wrap">
         <?php $__currentLoopData = $ez; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $r): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-        <div class="product-wrapper product col-lg-6 d-flex align-items-center">
+        <div class="product-wrapper product flex-wrap col-lg-8 col-md-8 col-sm-12 col-12 d-flex align-items-center">
             
-               <div class="d-flex flex-column">
-                    <img class="photo pe-3" src="<?php echo e($r->Img); ?>"/>
+               <div class="d-flex flex-column col-12 col-md-6 text-center align-items-center">
+                    <img class="photo pe-3 img-fluid" src="<?php echo e($r->Img); ?>"/>
                     <?php echo e($r->Price); ?>
 
                     
                    <button class="button"><a href="<?php echo e(url("/add")); ?>/<?php echo e($r->id); ?>"><p id="buttons">Добавить в корзину</p></a></button>
                </div>
 
-               <div class="containerr">
-                    <div class="d-flex gap-4 align-items-center">
+               <div class="containerr col-12 col-md-6">
+                    <div class="d-flex gap-4 align-items-center ">
                         <h3><?php echo e($r->Name); ?></h3>
                         <p><?php echo e($r->characteristic); ?></p>
                     </div>

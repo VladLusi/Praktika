@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Basskets extends Model
 {
-    use HasFactory;
+    protected $fillable = ['count', 'id_product', 'id_user'];
 }

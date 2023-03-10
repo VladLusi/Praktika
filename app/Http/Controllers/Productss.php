@@ -35,11 +35,11 @@ class Productss extends Controller
      return view('buttons', ['basketss'=>$n]);
  }
  public function Basketsy($id){
-    $id = Auth::id();
+    $idd = Auth::id();
     $n=\App\Models\Basskets::create([
-        'id_user'=>$id,
-        "id_product"=> $id,
-        "count"=> 2,
+        'id_user'=>$idd,
+        'id_product'=> $id,
+        'count'=> 2
     ]);
     return view('buttons', ['basketss'=>$n]);
 }

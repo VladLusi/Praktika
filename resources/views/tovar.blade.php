@@ -6,7 +6,7 @@
         <div class="product-wrapper product col-lg-6 d-flex align-items-center">
             {{-- <a href="" class="product d-flex align-items-center"> --}}
                <div class="d-flex flex-column">
-                    <img class="photo pe-3" src="{{$r->Img}}"/>
+                    <img class="photo pe-3 img-fluid" src="{{$r->Img}}"/>
                     {{$r->Price}}
                </div>
 
@@ -18,7 +18,7 @@
                     
                         <p>{{$r->Data}}</p>
                     </div>
-                    <big>Описание</big>
+                    <big>Описаниермормрмормр</big>
                     <p id="Opisanie">
                         PlayStation 5 получила 16 ГБ оперативной памяти нового стандарта GDDR6 с пропускной способностью 448 ГБ в секунду.
                     PlayStation 5 имеет оптический привод Ultra HD Blu-ray и использует диски

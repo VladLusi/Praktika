@@ -6,7 +6,7 @@
         <div class="product-wrapper product col-lg-6 d-flex align-items-center">
             {{-- <a href="" class="product d-flex align-items-center"> --}}
                <div class="d-flex flex-column">
-                    <img class="photo pe-3" src="{{$m->Img}}"/>
+                    <img class="photo pe-3 img-fluid" src="{{$m->Img}}"/>
                     {{$m->Price}}
                </div>
 

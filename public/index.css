@@ -254,11 +254,11 @@ i {
 	border-radius: 3px;
 	position: relative;
 	background: #fff;
-	margin: 0 20px 20px 0;
+	margin: 10px;
 	text-decoration: none;
 	color: #d6d0d0;
 	z-index: 0;
-	height: 300px;
+	/* height: 300px; */
     width: 30%;
 }
 .product-photo {
@@ -323,7 +323,7 @@ i {
 	border: 1px solid #e6e7e6;
 	border-radius: 20px;
     height: 60px;
-    width: 100px;
+    width: fit-content;
     font-size: 13px;
     display: flex;
     color: #d6d0d0;
